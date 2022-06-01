@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import DestinationProvider from "./context/destination-context";
+import {Destinations} from "./component/view/destinations/destinations";
+import {HeaderActionDestination} from "./component/layout/header-action-destination/header-action-destination";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <DestinationProvider>
+            <main className='appContainer'>
+                <HeaderActionDestination></HeaderActionDestination>
+                <Destinations></Destinations>
+            </main>
+        </DestinationProvider>
+    );
 }
 
 export default App;

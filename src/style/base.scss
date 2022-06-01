@@ -1,0 +1,17 @@
+@import 'bulma/css/bulma.min.css';
+@import "~bulma/sass/utilities/mixins";
+@import 'variable';
+@import 'font';
+
+.title {
+  font-size: $title-size;
+  font-weight: $light-weight;
+  margin-bottom: 0 !important;
+}
+
+.is-primary {
+  background: $primary !important;
+}
+.is-fullwidth {
+  width: 100%;
+}

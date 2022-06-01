@@ -1,0 +1,17 @@
+@import "../../../style/variable";
+
+.title-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  label {
+    font-size: $big-size;
+    font-weight: $bold-weight;
+    color: $black
+  }
+  p {
+    font-size: $small-size;
+  }
+}

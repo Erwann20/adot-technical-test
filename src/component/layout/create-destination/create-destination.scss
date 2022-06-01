@@ -1,0 +1,41 @@
+@import "../../../style/variable";
+
+
+.create-destination {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .action-input, .action-input input {
+    width: 100%;
+  }
+
+  .action-input {
+    margin-bottom: $big-size;
+  }
+
+  .checked-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: $big-size;
+    label {
+      font-size: $small-size;
+      font-weight: $regular-weight;
+    }
+  }
+
+  .destinations-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $default-size;
+
+    .action-input:not(.action-input:last-child) {
+      margin-right: $default-size;
+    }
+  }
+}

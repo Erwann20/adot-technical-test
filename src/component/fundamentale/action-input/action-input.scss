@@ -1,0 +1,10 @@
+@import "../../../style/variable";
+
+.action-input {
+  input {
+    background: $grey;
+    border: 0;
+    outline: 0;
+    padding: $default-size;
+  }
+}

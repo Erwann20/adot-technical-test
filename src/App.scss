@@ -1,0 +1,9 @@
+@import "./style/base";
+
+.appContainer {
+  margin: 100px 150px;
+
+  @include mobile {
+    margin: $big-size;
+  }
+}

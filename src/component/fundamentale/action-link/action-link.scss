@@ -1,0 +1,14 @@
+@import "../../../style/variable";
+
+.link {
+  &.primary-link {
+    color: $primary;
+    font-size: $small-size;
+    font-weight: $bold-weight;
+  }
+  &.secondary-link {
+    color: $dark-grey;
+    font-size: $small-size;
+    font-weight: $bold-weight;
+  }
+}

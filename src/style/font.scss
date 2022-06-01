@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import "variable";
+
+$primary-font: 'Roboto', sans-serif;
+
+/**
+  Size
+*/
+
+.is-size-1 {
+  font-size: $small-size;
+}
+
+.is-size-2 {
+  font-size: $default-size;
+}
+
+.is-size-3 {
+  font-size: $big-size;
+}

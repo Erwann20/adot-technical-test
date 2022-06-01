@@ -1,0 +1,23 @@
+@import "../../../style/variable";
+
+.count-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  label {
+    font-size: $default-size;
+    font-weight: $bold-weight;
+    color: $black;
+    margin-bottom: 5px;
+
+    span {
+      margin-left: 4px;
+    }
+  }
+
+  span {
+    font-size: $small-size;
+  }
+}

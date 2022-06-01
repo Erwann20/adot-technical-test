@@ -1,0 +1,59 @@
+@import "../../../style/base";
+
+.modal-shadow {
+  position: absolute;
+  background: rgba(1, 1, 1, 0.2);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  border-radius: $small-size / 2;
+  padding: $big-size;
+  z-index: 2;
+  box-shadow: rgb(0 0 0 / 35%) 0px 2px 14px;
+
+  @include mobile {
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    min-width: 100%;
+    height: 100%;
+  }
+
+  label {
+    font-size: $big-size;
+    font-weight: $bold-weight;
+  }
+
+  .modal-content {
+    @include desktop {
+      margin-bottom: $big-size;
+      margin-top: $big-size;
+      width: 545px;
+    }
+    @include mobile {
+      margin: $big-size 0;
+    }
+  }
+
+  .modal-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .link:first-child {
+      margin-right: $big-size * 2;
+    }
+  }
+}

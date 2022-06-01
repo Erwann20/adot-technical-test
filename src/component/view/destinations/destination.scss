@@ -1,0 +1,15 @@
+@import "../../../style/base";
+
+.destinations-container {
+  margin-top: $big-size * 2;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  @include mobile {
+    grid-template-columns: auto;
+  }
+
+  .destination-card:not(.destination-card:last-child) {
+    margin-right: $default-size;
+  }
+}

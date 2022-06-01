@@ -1,0 +1,15 @@
+@import "../../../style/variable";
+
+.button {
+  padding: $small-size;
+  font-size: $small-size;
+  font-weight: $bold-weight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: $small-size;
+    margin-right: $small-size;
+  }
+}
