@@ -13,7 +13,7 @@ export const ModalContainer = ({
 
     const escFunction = useCallback((event: KeyboardEvent): void => {
         if (event.key === 'Escape') {
-            cancelAction()
+            cancelAction();
         }
     }, []);
 

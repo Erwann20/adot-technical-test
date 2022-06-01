@@ -13,19 +13,19 @@ export const CreateDestination = ({setDestination}: CreateDestinationType) => {
 
 
     const updateNewDestination = (event: ChangeEvent<HTMLInputElement>): void => {
-        const key: keyof RequestDestination = event.target.name as keyof RequestDestination
+        const key: keyof RequestDestination = event.target.name as keyof RequestDestination;
         if (key && event.target.value) {
             newDestination[key] = event.target.value as any;
-            setDestination(newDestination)
+            setDestination(newDestination);
         }
-    }
+    };
 
     const updateDestinationChecked = (): void => {
         const checkedUpdate = !isChecked
         setIsChecked(checkedUpdate)
         newDestination.checked = checkedUpdate;
         setDestination(newDestination)
-    }
+    };
 
     return (
         <div className='create-destination'>

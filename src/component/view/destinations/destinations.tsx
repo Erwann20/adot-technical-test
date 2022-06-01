@@ -8,8 +8,8 @@ export const Destinations = () => {
     const {destinations, loadDestination} = useDestination();
 
     useEffect(() => {
-        loadDestination()
-    }, [])
+        loadDestination();
+    }, []);
 
     return (
         <div className='destinations-container'>

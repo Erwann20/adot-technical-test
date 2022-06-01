@@ -16,14 +16,15 @@ export const DestinationCard = ({destination, indexDestination}: DestinationCard
         backgroundRepeat: 'repeat',
         backgroundSize: 'cover',
         backgroundImage: `url(${destination.imageLink})`,
-    }
+    };
+
     useEffect(() => {
-        setIsChecked(destination.checked)
-    }, [destination.checked])
+        setIsChecked(destination.checked);
+    }, [destination.checked]);
 
     const updateChecked = (): void => {
         updateCheck(indexDestination);
-        setIsChecked(!isChecked)
+        setIsChecked(!isChecked);
     }
     return(
         <div className='destination-card'>
@@ -35,5 +36,5 @@ export const DestinationCard = ({destination, indexDestination}: DestinationCard
             </div>
             <CountItemDestination destinationDetail={destination.detail}></CountItemDestination>
         </div>
-    )
+    );
 }

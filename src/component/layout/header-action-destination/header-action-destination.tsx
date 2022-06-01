@@ -31,7 +31,7 @@ export const HeaderActionDestination = () => {
                 };
 
                 saveDestination(destinationToSave);
-                setModalCreate(false)
+                setModalCreate(false);
             }
         }
     }
