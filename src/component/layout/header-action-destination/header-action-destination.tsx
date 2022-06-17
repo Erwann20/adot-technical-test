@@ -39,7 +39,8 @@ export const HeaderActionDestination = () => {
     return(
         <HeaderAction>
             <h2 className='title'>Destinations</h2>
-            <ActionButton  actionClick={() => setModalCreate(true)}>
+            <ActionButton  actionClick={() => setModalCreate(true)}
+                           id='add-destination'>
                 <img src={iconSvg}/>
                 AJOUTER
             </ActionButton>

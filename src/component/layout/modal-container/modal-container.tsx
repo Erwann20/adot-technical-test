@@ -31,8 +31,8 @@ export const ModalContainer = ({
         <>
             {
                 isOpen &&
-                <>
-                    <div className='modal-shadow' onClick={() => cancelAction()}>
+                <div id='modal-container'>
+                    <div className='modal-shadow' id='modal-shadow' onClick={() => cancelAction()}>
                     </div>
                     <div className='modal-container'>
                         <label>{title}</label>
@@ -40,11 +40,11 @@ export const ModalContainer = ({
                             {children}
                         </div>
                         <div className='modal-action'>
-                            <ActionLink libelle='CANCEL' isPrimary={false} actionClick={() => cancelAction()}></ActionLink>
-                            <ActionLink libelle='CONFIRM' isPrimary={true} actionClick={() => okAction()}></ActionLink>
+                            <ActionLink id='cancel' libelle='CANCEL' isPrimary={false} actionClick={() => cancelAction()}></ActionLink>
+                            <ActionLink id='confirm' libelle='CONFIRM' isPrimary={true} actionClick={() => okAction()}></ActionLink>
                         </div>
                     </div>
-                </>
+                </div>
             }
         </>
     )
